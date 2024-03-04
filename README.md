@@ -26,7 +26,7 @@ In your terminal ensure you have navigated to the project folder run `pip instal
 If you want to know more about the requirements file check out this resource: https://learnpython.com/blog/python-requirements-file/
 
 ### Setup Complete!
-You should be able to run this game from the `main.py` file on your system now.
+You Should be able to run this game from the `main.py` file on your system now.
 
 ## Controls
 | Key | Description           |
@@ -38,6 +38,27 @@ You should be able to run this game from the `main.py` file on your system now.
 | E   | interact              |
 | I   | toggle inventory menu |
 
+## Game Ideas
+
+The basic flow of the game is that you get a customer who has an ailment. 
+Based on their ailment you acquire a recipe (this still needs to be worked out) and go to the forrest to forage the ingredients.
+You then come back to your house/shop and create the remedy for them.
+After the customer is treated, then you get a reward of some kind.
+
+### What needs to be figured out
+- How do you acquire recipes?
+- Should there be stamina while foraging?
+- Should there be elements of magic?
+- Should there be a story line?
+- Should there be educational tidbits?
+- Should there be a store for materials like jars?
+- Should there be achievements?
+- Should there be a setting to convert the units in recipe (metric support)?
+- Should there be a guide for the plants?
+- Should I add elements of farming, or other elements to the game?
+- Should it be laid out in levels?
+- Should it be community based, where different characters have differnet specialties and can reward you with different items when they're treated?
+
 ## Resources
 
 ### Coding
@@ -46,6 +67,7 @@ You should be able to run this game from the `main.py` file on your system now.
 - Python requirements file: https://learnpython.com/blog/python-requirements-file/
 - Pygame documentation: https://www.pygame.org/docs/index.html
 - Pygame basics: https://realpython.com/pygame-a-primer/#sprite-groups
+- Pygame scene management: https://nerdparadise.com/programming/pygame/part7
  
 ### Recipes
 - Ginger tea: https://cookieandkate.com/fresh-ginger-tea-recipe/
