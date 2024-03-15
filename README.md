@@ -46,7 +46,7 @@ You Should be able to run this game from the `main.py` file on your system now.
 2. The player goes into to the village and ask the elders about the ailment to acquire a recipe.
 3. The player goes to the forest to forage the ingredients for the remedy outlined in the recipe.
 4. The player returns to the clinic and prepares the remedy with a minigame.
-5. The player treats the customer and they reward the player with items and supplies.
+5. The player treats the customer, and they reward the player with items and supplies.
 
 ### Other ideas
 - Ghost grandma that gives you the recipe for a major illness
@@ -70,12 +70,38 @@ You Should be able to run this game from the `main.py` file on your system now.
 
 ### In progress
 - Workstation Scene (mini game to create the remedy): Lauryn
+  ~~- Minigame system~~
+  ~~- Cutting mini game~~
+  - Juicing mini game
+  - Boiling mini game
+  - Measuring mini game
+  - Mixing mini game
+  - Completion of recipe
+  - Timing system
+  - Fix progress bar to be a fixed size
+  - Add completion of mini game animation
+  - Inventory persistence of crafted item
+  - Show recipe at some point
+  - Devise recipe object for 
 
 ### To be picked up
 - Clinic scene (customer comes in and presents with an illness or injury)
 - Village scene (a village with explorable houses and npcs to get recipes from)
 - Treatment scene (customer is given remedy, customer gives reward)
 - Inventory persistence (how will the items from the inventory transfer between scenes?)
+- Refactor player to work with multiple scenes
+- Make game object parent class (is this necessary?)
+
+```
+class GameObject:
+
+    def __init(self):
+        pass
+    def update(self):
+        pass
+    def render(self):
+        pass
+```
 
 ### Done
 - Forrest scene (items in the screen that are able to be harvested and added to an inventory)
@@ -91,8 +117,9 @@ You Should be able to run this game from the `main.py` file on your system now.
 - Pygame basics: https://realpython.com/pygame-a-primer/#sprite-groups
 - Pygame scene management: https://nerdparadise.com/programming/pygame/part7
 - Python conventions: https://peps.python.org/pep-0008/
+
+### Art
 - Endesga 64 Palette values: https://lospec.com/palette-list/endesga-64
-- 
  
 ### Recipes
 - Ginger tea: https://cookieandkate.com/fresh-ginger-tea-recipe/

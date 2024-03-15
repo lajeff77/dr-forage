@@ -9,7 +9,7 @@ class ForagableItem(pygame.sprite.Sprite):
     def __init__(self, sprite_img_path, death_img_path, x, y, name, count):
         super(ForagableItem, self).__init__()
         self.surf = pygame.image.load(sprite_img_path)
-        self.surf.set_colorkey((255,255,255), RLEACCEL)
+        self.surf.set_colorkey((255, 255, 255), RLEACCEL)
         self.rect = self.surf.get_rect()
         self.rect.left = x
         self.rect.top = y

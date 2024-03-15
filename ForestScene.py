@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import (
-     K_i
+     K_i, K_h
 )
 from Scene import Scene
 from ForagableItem import ForagableItem
@@ -9,8 +9,8 @@ from Player import Player
 
 class ForestScene(Scene):
 
-    def __init__(self):
-        Scene.__init__(self)
+    def __init__(self, scene_manager):
+        Scene.__init__(self, scene_manager)
         self.inventory_showing = False
         self.font = pygame.font.Font('freesansbold.ttf', 24)
         self.tree1 = ForagableItem("resources/sprites/lemon-tree.png", "resources/sprites/tree.png", 250, 120, "lemon", 3)
@@ -31,6 +31,8 @@ class ForestScene(Scene):
             if event.type == pygame.KEYUP:
                 if event.key == K_i:
                     self.inventory_showing = not self.inventory_showing
+                if event.key == K_h:
+                    self.scene_manager.switch_to_scene("workstation")
 
         if not self.inventory_showing:
             self.player.update(pressed_keys, self.all_sprites)
@@ -41,19 +43,18 @@ class ForestScene(Scene):
         screen.fill((0, 205, 249))
         pygame.draw.rect(screen, (51, 152, 75), pygame.Rect(0, 300, 500, 200))
 
-        # foragable items
+        # draw all sprites
         for entity in self.all_sprites:
             screen.blit(entity.surf, entity.rect)
-
-        # player
-        screen.blit(self.player.surf, self.player.rect)
 
         # inventory menu
         if self.inventory_showing:
             pygame.draw.rect(screen, (255, 255, 255), pygame.Rect(100, 100, 300, 300))
-            text = ''
+            text = 'inventory'
+            title = self.font.render(text, True, 'black')
+            screen.blit(title, (105, 105))
             x = 105
-            y = 105
+            y = 135
             for name, val in self.player.inventory.items():
                 text = '{0}:{1} '.format(name, val)
                 item_list = self.font.render(text, True, 'black')
