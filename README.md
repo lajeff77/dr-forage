@@ -110,13 +110,20 @@ class GameObject:
 ## Resources
 
 ### Coding
+#### Python
 - Installing Python: https://www.datacamp.com/blog/how-to-install-python
-- Cloning a repository from Github: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 - Python requirements file: https://learnpython.com/blog/python-requirements-file/
+- Python conventions: https://peps.python.org/pep-0008/
+
+#### Pygame
 - Pygame documentation: https://www.pygame.org/docs/index.html
 - Pygame basics: https://realpython.com/pygame-a-primer/#sprite-groups
 - Pygame scene management: https://nerdparadise.com/programming/pygame/part7
-- Python conventions: https://peps.python.org/pep-0008/
+
+#### Git
+- Set remote branch automatically: https://stackoverflow.com/questions/17847213/how-to-configure-git-push-to-automatically-set-upstream-without-u
+- Cloning a repository from Github: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+- How branching works: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
 ### Art
 - Endesga 64 Palette values: https://lospec.com/palette-list/endesga-64
