@@ -19,7 +19,7 @@ class WorkStationScene(Scene):
         if self.minigame.is_complete():
             self.queue.next() # move to the next game in the queue when another is complete
         self.minigame = self.queue.get_current_minigame() # updates to current mini game
-        self.minigame.update(events, keys_pressed)
+        self.minigame.update(events, keys_pressed, self.scene_manager)
 
     def render(self, screen):
         self.minigame.render(screen)

@@ -25,11 +25,11 @@ class CuttingMiniGame(MiniGame):
         self.all_sprites.add(self.item)
         self.all_sprites.add(self.knife)
 
-    def update(self, events, keys_pressed):
+    def update(self, events, keys_pressed, scene_manager):
         for event in events:
             if event.type == pygame.KEYUP:
                 if event.key == K_h:
-                    self.scene_manager.switch_to_scene("forest")
+                    scene_manager.switch_to_scene("forest")
             if event.type == pygame.MOUSEBUTTONUP:
                 self.click_count += 1
 
