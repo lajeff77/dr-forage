@@ -1,12 +1,13 @@
 import pygame
 from ForestScene import ForestScene
-
+from Item import Item
+from VillageScene import VillageScene
 pygame.init()
 
 screen = pygame.display.set_mode([500, 500])
 pygame.display.set_caption("Dr.Forage")
 clock = pygame.time.Clock()
-scene = ForestScene()
+scene = VillageScene()
 fps = 60
 running = True
 
@@ -20,7 +21,6 @@ while running:
 
     # get key inputs
     pressed_keys = pygame.key.get_pressed()
-
     scene.update(events, pressed_keys)
     scene.render(screen)
 
